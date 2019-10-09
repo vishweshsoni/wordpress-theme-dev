@@ -77,3 +77,177 @@
 [07-Oct-2019 12:55:41 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /var/www/htdocs/wp-includes/update.php on line 160
 [07-Oct-2019 12:55:43 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /var/www/htdocs/wp-includes/update.php on line 384
 [07-Oct-2019 12:55:44 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /var/www/htdocs/wp-includes/update.php on line 569
+[09-Oct-2019 08:39:20 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function designfly_posted_on() in /var/www/htdocs/wp-content/themes/designfly/template-parts/content.php:25
+Stack trace:
+#0 /var/www/htdocs/wp-includes/template.php(724): require()
+#1 /var/www/htdocs/wp-includes/template.php(671): load_template('/var/www/htdocs...', false)
+#2 /var/www/htdocs/wp-includes/general-template.php(168): locate_template(Array, true, false)
+#3 /var/www/htdocs/wp-content/themes/designfly/index.php(41): get_template_part('template-parts/...', 'post')
+#4 /var/www/htdocs/wp-includes/template-loader.php(78): include('/var/www/htdocs...')
+#5 /var/www/htdocs/wp-blog-header.php(19): require_once('/var/www/htdocs...')
+#6 /var/www/htdocs/index.php(17): require('/var/www/htdocs...')
+#7 {main}
+  thrown in /var/www/htdocs/wp-content/themes/designfly/template-parts/content.php on line 25
+[09-Oct-2019 08:39:24 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function designfly_posted_on() in /var/www/htdocs/wp-content/themes/designfly/template-parts/content.php:25
+Stack trace:
+#0 /var/www/htdocs/wp-includes/template.php(724): require()
+#1 /var/www/htdocs/wp-includes/template.php(671): load_template('/var/www/htdocs...', false)
+#2 /var/www/htdocs/wp-includes/general-template.php(168): locate_template(Array, true, false)
+#3 /var/www/htdocs/wp-content/themes/designfly/index.php(41): get_template_part('template-parts/...', 'post')
+#4 /var/www/htdocs/wp-includes/template-loader.php(78): include('/var/www/htdocs...')
+#5 /var/www/htdocs/wp-blog-header.php(19): require_once('/var/www/htdocs...')
+#6 /var/www/htdocs/index.php(17): require('/var/www/htdocs...')
+#7 {main}
+  thrown in /var/www/htdocs/wp-content/themes/designfly/template-parts/content.php on line 25
+[09-Oct-2019 08:39:29 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function designfly_posted_on() in /var/www/htdocs/wp-content/themes/designfly/template-parts/content.php:25
+Stack trace:
+#0 /var/www/htdocs/wp-includes/template.php(724): require()
+#1 /var/www/htdocs/wp-includes/template.php(671): load_template('/var/www/htdocs...', false)
+#2 /var/www/htdocs/wp-includes/general-template.php(168): locate_template(Array, true, false)
+#3 /var/www/htdocs/wp-content/themes/designfly/single.php(20): get_template_part('template-parts/...', 'post')
+#4 /var/www/htdocs/wp-includes/template-loader.php(78): include('/var/www/htdocs...')
+#5 /var/www/htdocs/wp-blog-header.php(19): require_once('/var/www/htdocs...')
+#6 /var/www/htdocs/index.php(17): require('/var/www/htdocs...')
+#7 {main}
+  thrown in /var/www/htdocs/wp-content/themes/designfly/template-parts/content.php on line 25
+[09-Oct-2019 08:39:41 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function designfly_posted_on() in /var/www/htdocs/wp-content/themes/designfly/template-parts/content.php:25
+Stack trace:
+#0 /var/www/htdocs/wp-includes/template.php(724): require()
+#1 /var/www/htdocs/wp-includes/template.php(671): load_template('/var/www/htdocs...', false)
+#2 /var/www/htdocs/wp-includes/general-template.php(168): locate_template(Array, true, false)
+#3 /var/www/htdocs/wp-content/themes/designfly/index.php(41): get_template_part('template-parts/...', 'post')
+#4 /var/www/htdocs/wp-includes/template-loader.php(78): include('/var/www/htdocs...')
+#5 /var/www/htdocs/wp-blog-header.php(19): require_once('/var/www/htdocs...')
+#6 /var/www/htdocs/index.php(17): require('/var/www/htdocs...')
+#7 {main}
+  thrown in /var/www/htdocs/wp-content/themes/designfly/template-parts/content.php on line 25
+[09-Oct-2019 08:39:45 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function designfly_post_thumbnail() in /var/www/htdocs/wp-content/themes/designfly/template-parts/content-page.php:17
+Stack trace:
+#0 /var/www/htdocs/wp-includes/template.php(724): require()
+#1 /var/www/htdocs/wp-includes/template.php(671): load_template('/var/www/htdocs...', false)
+#2 /var/www/htdocs/wp-includes/general-template.php(168): locate_template(Array, true, false)
+#3 /var/www/htdocs/wp-content/themes/designfly/page.php(25): get_template_part('template-parts/...', 'page')
+#4 /var/www/htdocs/wp-includes/template-loader.php(78): include('/var/www/htdocs...')
+#5 /var/www/htdocs/wp-blog-header.php(19): require_once('/var/www/htdocs...')
+#6 /var/www/htdocs/index.php(17): require('/var/www/htdocs...')
+#7 {main}
+  thrown in /var/www/htdocs/wp-content/themes/designfly/template-parts/content-page.php on line 17
+[09-Oct-2019 08:42:59 UTC] PHP Parse error:  syntax error, unexpected end of file in /var/www/htdocs/wp-content/themes/designfly/functions.php on line 187
+[09-Oct-2019 08:45:00 UTC] PHP Warning:  require(/var/www/htdocs/wp-content/themes/designfly/inc/fucntion-admin.php): failed to open stream: No such file or directory in /var/www/htdocs/wp-content/themes/designfly/functions.php on line 11
+[09-Oct-2019 08:45:00 UTC] PHP Fatal error:  require(): Failed opening required '/var/www/htdocs/wp-content/themes/designfly/inc/fucntion-admin.php' (include_path='.:/usr/local/lib/php') in /var/www/htdocs/wp-content/themes/designfly/functions.php on line 11
+[09-Oct-2019 08:47:00 UTC] PHP Warning:  require(/var/www/htdocs/wp-content/themes/designfly/inc/fucntion-admin.php): failed to open stream: No such file or directory in /var/www/htdocs/wp-content/themes/designfly/functions.php on line 11
+[09-Oct-2019 08:47:00 UTC] PHP Fatal error:  require(): Failed opening required '/var/www/htdocs/wp-content/themes/designfly/inc/fucntion-admin.php' (include_path='.:/usr/local/lib/php') in /var/www/htdocs/wp-content/themes/designfly/functions.php on line 11
+[09-Oct-2019 08:47:01 UTC] PHP Warning:  require(/var/www/htdocs/wp-content/themes/designfly/inc/fucntion-admin.php): failed to open stream: No such file or directory in /var/www/htdocs/wp-content/themes/designfly/functions.php on line 11
+[09-Oct-2019 08:47:01 UTC] PHP Fatal error:  require(): Failed opening required '/var/www/htdocs/wp-content/themes/designfly/inc/fucntion-admin.php' (include_path='.:/usr/local/lib/php') in /var/www/htdocs/wp-content/themes/designfly/functions.php on line 11
+[09-Oct-2019 08:49:02 UTC] PHP Warning:  require(/var/www/htdocs/wp-content/themes/designfly/inc/fucntion-admin.php): failed to open stream: No such file or directory in /var/www/htdocs/wp-content/themes/designfly/functions.php on line 11
+[09-Oct-2019 08:49:02 UTC] PHP Fatal error:  require(): Failed opening required '/var/www/htdocs/wp-content/themes/designfly/inc/fucntion-admin.php' (include_path='.:/usr/local/lib/php') in /var/www/htdocs/wp-content/themes/designfly/functions.php on line 11
+[09-Oct-2019 08:51:03 UTC] PHP Warning:  require(/var/www/htdocs/wp-content/themes/designfly/inc/fucntion-admin.php): failed to open stream: No such file or directory in /var/www/htdocs/wp-content/themes/designfly/functions.php on line 11
+[09-Oct-2019 08:51:03 UTC] PHP Fatal error:  require(): Failed opening required '/var/www/htdocs/wp-content/themes/designfly/inc/fucntion-admin.php' (include_path='.:/usr/local/lib/php') in /var/www/htdocs/wp-content/themes/designfly/functions.php on line 11
+[09-Oct-2019 08:53:04 UTC] PHP Warning:  require(/var/www/htdocs/wp-content/themes/designfly/inc/fucntion-admin.php): failed to open stream: No such file or directory in /var/www/htdocs/wp-content/themes/designfly/functions.php on line 11
+[09-Oct-2019 08:53:04 UTC] PHP Fatal error:  require(): Failed opening required '/var/www/htdocs/wp-content/themes/designfly/inc/fucntion-admin.php' (include_path='.:/usr/local/lib/php') in /var/www/htdocs/wp-content/themes/designfly/functions.php on line 11
+[09-Oct-2019 08:54:27 UTC] PHP Warning:  require(/var/www/htdocs/wp-content/themes/designfly/inc/fucntion-admin.php): failed to open stream: No such file or directory in /var/www/htdocs/wp-content/themes/designfly/functions.php on line 11
+[09-Oct-2019 08:54:27 UTC] PHP Fatal error:  require(): Failed opening required '/var/www/htdocs/wp-content/themes/designfly/inc/fucntion-admin.php' (include_path='.:/usr/local/lib/php') in /var/www/htdocs/wp-content/themes/designfly/functions.php on line 11
+[09-Oct-2019 08:55:28 UTC] PHP Warning:  require(/var/www/htdocs/wp-content/themes/designfly/inc/fucntion-admin.php): failed to open stream: No such file or directory in /var/www/htdocs/wp-content/themes/designfly/functions.php on line 11
+[09-Oct-2019 08:55:28 UTC] PHP Fatal error:  require(): Failed opening required '/var/www/htdocs/wp-content/themes/designfly/inc/fucntion-admin.php' (include_path='.:/usr/local/lib/php') in /var/www/htdocs/wp-content/themes/designfly/functions.php on line 11
+[09-Oct-2019 08:57:00 UTC] PHP Warning:  require(/var/www/htdocs/wp-content/themes/designfly/inc/fucntion-admin.php): failed to open stream: No such file or directory in /var/www/htdocs/wp-content/themes/designfly/functions.php on line 11
+[09-Oct-2019 08:57:00 UTC] PHP Fatal error:  require(): Failed opening required '/var/www/htdocs/wp-content/themes/designfly/inc/fucntion-admin.php' (include_path='.:/usr/local/lib/php') in /var/www/htdocs/wp-content/themes/designfly/functions.php on line 11
+[09-Oct-2019 08:57:29 UTC] PHP Warning:  require(/var/www/htdocs/wp-content/themes/designfly/inc/fucntion-admin.php): failed to open stream: No such file or directory in /var/www/htdocs/wp-content/themes/designfly/functions.php on line 11
+[09-Oct-2019 08:57:29 UTC] PHP Fatal error:  require(): Failed opening required '/var/www/htdocs/wp-content/themes/designfly/inc/fucntion-admin.php' (include_path='.:/usr/local/lib/php') in /var/www/htdocs/wp-content/themes/designfly/functions.php on line 11
+[09-Oct-2019 08:59:29 UTC] PHP Warning:  require(/var/www/htdocs/wp-content/themes/designfly/inc/fucntion-admin.php): failed to open stream: No such file or directory in /var/www/htdocs/wp-content/themes/designfly/functions.php on line 11
+[09-Oct-2019 08:59:29 UTC] PHP Fatal error:  require(): Failed opening required '/var/www/htdocs/wp-content/themes/designfly/inc/fucntion-admin.php' (include_path='.:/usr/local/lib/php') in /var/www/htdocs/wp-content/themes/designfly/functions.php on line 11
+[09-Oct-2019 09:01:29 UTC] PHP Warning:  require(/var/www/htdocs/wp-content/themes/designfly/inc/fucntion-admin.php): failed to open stream: No such file or directory in /var/www/htdocs/wp-content/themes/designfly/functions.php on line 11
+[09-Oct-2019 09:01:29 UTC] PHP Fatal error:  require(): Failed opening required '/var/www/htdocs/wp-content/themes/designfly/inc/fucntion-admin.php' (include_path='.:/usr/local/lib/php') in /var/www/htdocs/wp-content/themes/designfly/functions.php on line 11
+[09-Oct-2019 09:03:29 UTC] PHP Warning:  require(/var/www/htdocs/wp-content/themes/designfly/inc/fucntion-admin.php): failed to open stream: No such file or directory in /var/www/htdocs/wp-content/themes/designfly/functions.php on line 11
+[09-Oct-2019 09:03:29 UTC] PHP Fatal error:  require(): Failed opening required '/var/www/htdocs/wp-content/themes/designfly/inc/fucntion-admin.php' (include_path='.:/usr/local/lib/php') in /var/www/htdocs/wp-content/themes/designfly/functions.php on line 11
+[09-Oct-2019 09:07:00 UTC] PHP Warning:  require(/var/www/htdocs/wp-content/themes/designfly/inc/fucntion-admin.php): failed to open stream: No such file or directory in /var/www/htdocs/wp-content/themes/designfly/functions.php on line 11
+[09-Oct-2019 09:07:00 UTC] PHP Fatal error:  require(): Failed opening required '/var/www/htdocs/wp-content/themes/designfly/inc/fucntion-admin.php' (include_path='.:/usr/local/lib/php') in /var/www/htdocs/wp-content/themes/designfly/functions.php on line 11
+[09-Oct-2019 09:17:00 UTC] PHP Warning:  require(/var/www/htdocs/wp-content/themes/designfly/inc/fucntion-admin.php): failed to open stream: No such file or directory in /var/www/htdocs/wp-content/themes/designfly/functions.php on line 11
+[09-Oct-2019 09:17:00 UTC] PHP Fatal error:  require(): Failed opening required '/var/www/htdocs/wp-content/themes/designfly/inc/fucntion-admin.php' (include_path='.:/usr/local/lib/php') in /var/www/htdocs/wp-content/themes/designfly/functions.php on line 11
+[09-Oct-2019 09:27:00 UTC] PHP Warning:  require(/var/www/htdocs/wp-content/themes/designfly/inc/fucntion-admin.php): failed to open stream: No such file or directory in /var/www/htdocs/wp-content/themes/designfly/functions.php on line 11
+[09-Oct-2019 09:27:00 UTC] PHP Fatal error:  require(): Failed opening required '/var/www/htdocs/wp-content/themes/designfly/inc/fucntion-admin.php' (include_path='.:/usr/local/lib/php') in /var/www/htdocs/wp-content/themes/designfly/functions.php on line 11
+[09-Oct-2019 09:37:00 UTC] PHP Warning:  require(/var/www/htdocs/wp-content/themes/designfly/inc/fucntion-admin.php): failed to open stream: No such file or directory in /var/www/htdocs/wp-content/themes/designfly/functions.php on line 11
+[09-Oct-2019 09:37:00 UTC] PHP Fatal error:  require(): Failed opening required '/var/www/htdocs/wp-content/themes/designfly/inc/fucntion-admin.php' (include_path='.:/usr/local/lib/php') in /var/www/htdocs/wp-content/themes/designfly/functions.php on line 11
+[09-Oct-2019 09:47:00 UTC] PHP Warning:  require(/var/www/htdocs/wp-content/themes/designfly/inc/fucntion-admin.php): failed to open stream: No such file or directory in /var/www/htdocs/wp-content/themes/designfly/functions.php on line 11
+[09-Oct-2019 09:47:00 UTC] PHP Fatal error:  require(): Failed opening required '/var/www/htdocs/wp-content/themes/designfly/inc/fucntion-admin.php' (include_path='.:/usr/local/lib/php') in /var/www/htdocs/wp-content/themes/designfly/functions.php on line 11
+[09-Oct-2019 09:57:00 UTC] PHP Warning:  require(/var/www/htdocs/wp-content/themes/designfly/inc/fucntion-admin.php): failed to open stream: No such file or directory in /var/www/htdocs/wp-content/themes/designfly/functions.php on line 11
+[09-Oct-2019 09:57:00 UTC] PHP Fatal error:  require(): Failed opening required '/var/www/htdocs/wp-content/themes/designfly/inc/fucntion-admin.php' (include_path='.:/usr/local/lib/php') in /var/www/htdocs/wp-content/themes/designfly/functions.php on line 11
+[09-Oct-2019 10:07:00 UTC] PHP Warning:  require(/var/www/htdocs/wp-content/themes/designfly/inc/fucntion-admin.php): failed to open stream: No such file or directory in /var/www/htdocs/wp-content/themes/designfly/functions.php on line 11
+[09-Oct-2019 10:07:00 UTC] PHP Fatal error:  require(): Failed opening required '/var/www/htdocs/wp-content/themes/designfly/inc/fucntion-admin.php' (include_path='.:/usr/local/lib/php') in /var/www/htdocs/wp-content/themes/designfly/functions.php on line 11
+[09-Oct-2019 10:17:00 UTC] PHP Warning:  require(/var/www/htdocs/wp-content/themes/designfly/inc/fucntion-admin.php): failed to open stream: No such file or directory in /var/www/htdocs/wp-content/themes/designfly/functions.php on line 11
+[09-Oct-2019 10:17:00 UTC] PHP Fatal error:  require(): Failed opening required '/var/www/htdocs/wp-content/themes/designfly/inc/fucntion-admin.php' (include_path='.:/usr/local/lib/php') in /var/www/htdocs/wp-content/themes/designfly/functions.php on line 11
+[09-Oct-2019 10:27:00 UTC] PHP Warning:  require(/var/www/htdocs/wp-content/themes/designfly/inc/fucntion-admin.php): failed to open stream: No such file or directory in /var/www/htdocs/wp-content/themes/designfly/functions.php on line 11
+[09-Oct-2019 10:27:00 UTC] PHP Fatal error:  require(): Failed opening required '/var/www/htdocs/wp-content/themes/designfly/inc/fucntion-admin.php' (include_path='.:/usr/local/lib/php') in /var/www/htdocs/wp-content/themes/designfly/functions.php on line 11
+[09-Oct-2019 10:37:00 UTC] PHP Warning:  require(/var/www/htdocs/wp-content/themes/designfly/inc/fucntion-admin.php): failed to open stream: No such file or directory in /var/www/htdocs/wp-content/themes/designfly/functions.php on line 11
+[09-Oct-2019 10:37:00 UTC] PHP Fatal error:  require(): Failed opening required '/var/www/htdocs/wp-content/themes/designfly/inc/fucntion-admin.php' (include_path='.:/usr/local/lib/php') in /var/www/htdocs/wp-content/themes/designfly/functions.php on line 11
+[09-Oct-2019 10:47:00 UTC] PHP Warning:  require(/var/www/htdocs/wp-content/themes/designfly/inc/fucntion-admin.php): failed to open stream: No such file or directory in /var/www/htdocs/wp-content/themes/designfly/functions.php on line 11
+[09-Oct-2019 10:47:00 UTC] PHP Fatal error:  require(): Failed opening required '/var/www/htdocs/wp-content/themes/designfly/inc/fucntion-admin.php' (include_path='.:/usr/local/lib/php') in /var/www/htdocs/wp-content/themes/designfly/functions.php on line 11
+[09-Oct-2019 10:57:00 UTC] PHP Warning:  require(/var/www/htdocs/wp-content/themes/designfly/inc/fucntion-admin.php): failed to open stream: No such file or directory in /var/www/htdocs/wp-content/themes/designfly/functions.php on line 11
+[09-Oct-2019 10:57:00 UTC] PHP Fatal error:  require(): Failed opening required '/var/www/htdocs/wp-content/themes/designfly/inc/fucntion-admin.php' (include_path='.:/usr/local/lib/php') in /var/www/htdocs/wp-content/themes/designfly/functions.php on line 11
+[09-Oct-2019 11:07:00 UTC] PHP Warning:  require(/var/www/htdocs/wp-content/themes/designfly/inc/fucntion-admin.php): failed to open stream: No such file or directory in /var/www/htdocs/wp-content/themes/designfly/functions.php on line 11
+[09-Oct-2019 11:07:00 UTC] PHP Fatal error:  require(): Failed opening required '/var/www/htdocs/wp-content/themes/designfly/inc/fucntion-admin.php' (include_path='.:/usr/local/lib/php') in /var/www/htdocs/wp-content/themes/designfly/functions.php on line 11
+[09-Oct-2019 11:07:41 UTC] PHP Warning:  require(/var/www/htdocs/wp-content/themes/designfly/inc/fucntion-admin.php): failed to open stream: No such file or directory in /var/www/htdocs/wp-content/themes/designfly/functions.php on line 11
+[09-Oct-2019 11:07:41 UTC] PHP Fatal error:  require(): Failed opening required '/var/www/htdocs/wp-content/themes/designfly/inc/fucntion-admin.php' (include_path='.:/usr/local/lib/php') in /var/www/htdocs/wp-content/themes/designfly/functions.php on line 11
+[09-Oct-2019 11:07:42 UTC] PHP Warning:  require(/var/www/htdocs/wp-content/themes/designfly/inc/fucntion-admin.php): failed to open stream: No such file or directory in /var/www/htdocs/wp-content/themes/designfly/functions.php on line 11
+[09-Oct-2019 11:07:42 UTC] PHP Fatal error:  require(): Failed opening required '/var/www/htdocs/wp-content/themes/designfly/inc/fucntion-admin.php' (include_path='.:/usr/local/lib/php') in /var/www/htdocs/wp-content/themes/designfly/functions.php on line 11
+[09-Oct-2019 11:07:43 UTC] PHP Warning:  require(/var/www/htdocs/wp-content/themes/designfly/inc/fucntion-admin.php): failed to open stream: No such file or directory in /var/www/htdocs/wp-content/themes/designfly/functions.php on line 11
+[09-Oct-2019 11:07:43 UTC] PHP Fatal error:  require(): Failed opening required '/var/www/htdocs/wp-content/themes/designfly/inc/fucntion-admin.php' (include_path='.:/usr/local/lib/php') in /var/www/htdocs/wp-content/themes/designfly/functions.php on line 11
+[09-Oct-2019 11:07:43 UTC] PHP Warning:  require(/var/www/htdocs/wp-content/themes/designfly/inc/fucntion-admin.php): failed to open stream: No such file or directory in /var/www/htdocs/wp-content/themes/designfly/functions.php on line 11
+[09-Oct-2019 11:07:43 UTC] PHP Fatal error:  require(): Failed opening required '/var/www/htdocs/wp-content/themes/designfly/inc/fucntion-admin.php' (include_path='.:/usr/local/lib/php') in /var/www/htdocs/wp-content/themes/designfly/functions.php on line 11
+[09-Oct-2019 11:07:43 UTC] PHP Warning:  require(/var/www/htdocs/wp-content/themes/designfly/inc/fucntion-admin.php): failed to open stream: No such file or directory in /var/www/htdocs/wp-content/themes/designfly/functions.php on line 11
+[09-Oct-2019 11:07:43 UTC] PHP Fatal error:  require(): Failed opening required '/var/www/htdocs/wp-content/themes/designfly/inc/fucntion-admin.php' (include_path='.:/usr/local/lib/php') in /var/www/htdocs/wp-content/themes/designfly/functions.php on line 11
+[09-Oct-2019 11:07:44 UTC] PHP Warning:  require(/var/www/htdocs/wp-content/themes/designfly/inc/fucntion-admin.php): failed to open stream: No such file or directory in /var/www/htdocs/wp-content/themes/designfly/functions.php on line 11
+[09-Oct-2019 11:07:44 UTC] PHP Fatal error:  require(): Failed opening required '/var/www/htdocs/wp-content/themes/designfly/inc/fucntion-admin.php' (include_path='.:/usr/local/lib/php') in /var/www/htdocs/wp-content/themes/designfly/functions.php on line 11
+[09-Oct-2019 11:07:52 UTC] PHP Warning:  require(/var/www/htdocs/wp-content/themes/designfly/inc/fucntion-admin.php): failed to open stream: No such file or directory in /var/www/htdocs/wp-content/themes/designfly/functions.php on line 11
+[09-Oct-2019 11:07:52 UTC] PHP Fatal error:  require(): Failed opening required '/var/www/htdocs/wp-content/themes/designfly/inc/fucntion-admin.php' (include_path='.:/usr/local/lib/php') in /var/www/htdocs/wp-content/themes/designfly/functions.php on line 11
+[09-Oct-2019 11:07:53 UTC] PHP Warning:  require(/var/www/htdocs/wp-content/themes/designfly/inc/fucntion-admin.php): failed to open stream: No such file or directory in /var/www/htdocs/wp-content/themes/designfly/functions.php on line 11
+[09-Oct-2019 11:07:53 UTC] PHP Fatal error:  require(): Failed opening required '/var/www/htdocs/wp-content/themes/designfly/inc/fucntion-admin.php' (include_path='.:/usr/local/lib/php') in /var/www/htdocs/wp-content/themes/designfly/functions.php on line 11
+[09-Oct-2019 11:07:53 UTC] PHP Warning:  require(/var/www/htdocs/wp-content/themes/designfly/inc/fucntion-admin.php): failed to open stream: No such file or directory in /var/www/htdocs/wp-content/themes/designfly/functions.php on line 11
+[09-Oct-2019 11:07:53 UTC] PHP Fatal error:  require(): Failed opening required '/var/www/htdocs/wp-content/themes/designfly/inc/fucntion-admin.php' (include_path='.:/usr/local/lib/php') in /var/www/htdocs/wp-content/themes/designfly/functions.php on line 11
+[09-Oct-2019 11:07:53 UTC] PHP Warning:  require(/var/www/htdocs/wp-content/themes/designfly/inc/fucntion-admin.php): failed to open stream: No such file or directory in /var/www/htdocs/wp-content/themes/designfly/functions.php on line 11
+[09-Oct-2019 11:07:53 UTC] PHP Fatal error:  require(): Failed opening required '/var/www/htdocs/wp-content/themes/designfly/inc/fucntion-admin.php' (include_path='.:/usr/local/lib/php') in /var/www/htdocs/wp-content/themes/designfly/functions.php on line 11
+[09-Oct-2019 11:07:59 UTC] PHP Warning:  require(/var/www/htdocs/wp-content/themes/designfly/inc/fucntion-admin.php): failed to open stream: No such file or directory in /var/www/htdocs/wp-content/themes/designfly/functions.php on line 11
+[09-Oct-2019 11:07:59 UTC] PHP Fatal error:  require(): Failed opening required '/var/www/htdocs/wp-content/themes/designfly/inc/fucntion-admin.php' (include_path='.:/usr/local/lib/php') in /var/www/htdocs/wp-content/themes/designfly/functions.php on line 11
+[09-Oct-2019 11:07:59 UTC] PHP Warning:  require(/var/www/htdocs/wp-content/themes/designfly/inc/fucntion-admin.php): failed to open stream: No such file or directory in /var/www/htdocs/wp-content/themes/designfly/functions.php on line 11
+[09-Oct-2019 11:07:59 UTC] PHP Fatal error:  require(): Failed opening required '/var/www/htdocs/wp-content/themes/designfly/inc/fucntion-admin.php' (include_path='.:/usr/local/lib/php') in /var/www/htdocs/wp-content/themes/designfly/functions.php on line 11
+[09-Oct-2019 11:08:00 UTC] PHP Warning:  require(/var/www/htdocs/wp-content/themes/designfly/inc/fucntion-admin.php): failed to open stream: No such file or directory in /var/www/htdocs/wp-content/themes/designfly/functions.php on line 11
+[09-Oct-2019 11:08:00 UTC] PHP Fatal error:  require(): Failed opening required '/var/www/htdocs/wp-content/themes/designfly/inc/fucntion-admin.php' (include_path='.:/usr/local/lib/php') in /var/www/htdocs/wp-content/themes/designfly/functions.php on line 11
+[09-Oct-2019 11:08:00 UTC] PHP Warning:  require(/var/www/htdocs/wp-content/themes/designfly/inc/fucntion-admin.php): failed to open stream: No such file or directory in /var/www/htdocs/wp-content/themes/designfly/functions.php on line 11
+[09-Oct-2019 11:08:00 UTC] PHP Fatal error:  require(): Failed opening required '/var/www/htdocs/wp-content/themes/designfly/inc/fucntion-admin.php' (include_path='.:/usr/local/lib/php') in /var/www/htdocs/wp-content/themes/designfly/functions.php on line 11
+[09-Oct-2019 11:08:07 UTC] PHP Warning:  require(/var/www/htdocs/wp-content/themes/designfly/inc/fucntion-admin.php): failed to open stream: No such file or directory in /var/www/htdocs/wp-content/themes/designfly/functions.php on line 11
+[09-Oct-2019 11:08:07 UTC] PHP Fatal error:  require(): Failed opening required '/var/www/htdocs/wp-content/themes/designfly/inc/fucntion-admin.php' (include_path='.:/usr/local/lib/php') in /var/www/htdocs/wp-content/themes/designfly/functions.php on line 11
+[09-Oct-2019 11:09:23 UTC] PHP Warning:  require(/var/www/htdocs/wp-content/themes/designfly/inc/fucntion-admin.php): failed to open stream: No such file or directory in /var/www/htdocs/wp-content/themes/designfly/functions.php on line 11
+[09-Oct-2019 11:09:23 UTC] PHP Fatal error:  require(): Failed opening required '/var/www/htdocs/wp-content/themes/designfly/inc/fucntion-admin.php' (include_path='.:/usr/local/lib/php') in /var/www/htdocs/wp-content/themes/designfly/functions.php on line 11
+[09-Oct-2019 11:10:07 UTC] PHP Warning:  require(/var/www/htdocs/wp-content/themes/designfly/inc/fucntions-admin.php): failed to open stream: No such file or directory in /var/www/htdocs/wp-content/themes/designfly/functions.php on line 11
+[09-Oct-2019 11:10:07 UTC] PHP Fatal error:  require(): Failed opening required '/var/www/htdocs/wp-content/themes/designfly/inc/fucntions-admin.php' (include_path='.:/usr/local/lib/php') in /var/www/htdocs/wp-content/themes/designfly/functions.php on line 11
+[09-Oct-2019 11:10:08 UTC] PHP Warning:  require(/var/www/htdocs/wp-content/themes/designfly/inc/fucntions-admin.php): failed to open stream: No such file or directory in /var/www/htdocs/wp-content/themes/designfly/functions.php on line 11
+[09-Oct-2019 11:10:08 UTC] PHP Fatal error:  require(): Failed opening required '/var/www/htdocs/wp-content/themes/designfly/inc/fucntions-admin.php' (include_path='.:/usr/local/lib/php') in /var/www/htdocs/wp-content/themes/designfly/functions.php on line 11
+[09-Oct-2019 11:10:08 UTC] PHP Warning:  require(/var/www/htdocs/wp-content/themes/designfly/inc/fucntions-admin.php): failed to open stream: No such file or directory in /var/www/htdocs/wp-content/themes/designfly/functions.php on line 11
+[09-Oct-2019 11:10:08 UTC] PHP Fatal error:  require(): Failed opening required '/var/www/htdocs/wp-content/themes/designfly/inc/fucntions-admin.php' (include_path='.:/usr/local/lib/php') in /var/www/htdocs/wp-content/themes/designfly/functions.php on line 11
+[09-Oct-2019 11:10:27 UTC] PHP Warning:  require(/var/www/htdocs/wp-content/themes/designfly/inc/fucntions-admin.php): failed to open stream: No such file or directory in /var/www/htdocs/wp-content/themes/designfly/functions.php on line 11
+[09-Oct-2019 11:10:27 UTC] PHP Fatal error:  require(): Failed opening required '/var/www/htdocs/wp-content/themes/designfly/inc/fucntions-admin.php' (include_path='.:/usr/local/lib/php') in /var/www/htdocs/wp-content/themes/designfly/functions.php on line 11
+[09-Oct-2019 11:10:27 UTC] PHP Warning:  require(/var/www/htdocs/wp-content/themes/designfly/inc/fucntions-admin.php): failed to open stream: No such file or directory in /var/www/htdocs/wp-content/themes/designfly/functions.php on line 11
+[09-Oct-2019 11:10:27 UTC] PHP Fatal error:  require(): Failed opening required '/var/www/htdocs/wp-content/themes/designfly/inc/fucntions-admin.php' (include_path='.:/usr/local/lib/php') in /var/www/htdocs/wp-content/themes/designfly/functions.php on line 11
+[09-Oct-2019 11:10:28 UTC] PHP Warning:  require(/var/www/htdocs/wp-content/themes/designfly/inc/fucntions-admin.php): failed to open stream: No such file or directory in /var/www/htdocs/wp-content/themes/designfly/functions.php on line 11
+[09-Oct-2019 11:10:28 UTC] PHP Fatal error:  require(): Failed opening required '/var/www/htdocs/wp-content/themes/designfly/inc/fucntions-admin.php' (include_path='.:/usr/local/lib/php') in /var/www/htdocs/wp-content/themes/designfly/functions.php on line 11
+[09-Oct-2019 11:11:40 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function designfly_posted_on() in /var/www/htdocs/wp-content/themes/designfly/template-parts/content.php:25
+Stack trace:
+#0 /var/www/htdocs/wp-includes/template.php(724): require()
+#1 /var/www/htdocs/wp-includes/template.php(671): load_template('/var/www/htdocs...', false)
+#2 /var/www/htdocs/wp-includes/general-template.php(168): locate_template(Array, true, false)
+#3 /var/www/htdocs/wp-content/themes/designfly/index.php(41): get_template_part('template-parts/...', 'post')
+#4 /var/www/htdocs/wp-includes/template-loader.php(78): include('/var/www/htdocs...')
+#5 /var/www/htdocs/wp-blog-header.php(19): require_once('/var/www/htdocs...')
+#6 /var/www/htdocs/index.php(17): require('/var/www/htdocs...')
+#7 {main}
+  thrown in /var/www/htdocs/wp-content/themes/designfly/template-parts/content.php on line 25
+[09-Oct-2019 11:11:57 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function designfly_posted_on() in /var/www/htdocs/wp-content/themes/designfly/template-parts/content.php:25
+Stack trace:
+#0 /var/www/htdocs/wp-includes/template.php(724): require()
+#1 /var/www/htdocs/wp-includes/template.php(671): load_template('/var/www/htdocs...', false)
+#2 /var/www/htdocs/wp-includes/general-template.php(168): locate_template(Array, true, false)
+#3 /var/www/htdocs/wp-content/themes/designfly/index.php(41): get_template_part('template-parts/...', 'post')
+#4 /var/www/htdocs/wp-includes/template-loader.php(78): include('/var/www/htdocs...')
+#5 /var/www/htdocs/wp-blog-header.php(19): require_once('/var/www/htdocs...')
+#6 /var/www/htdocs/index.php(17): require('/var/www/htdocs...')
+#7 {main}
+  thrown in /var/www/htdocs/wp-content/themes/designfly/template-parts/content.php on line 25
