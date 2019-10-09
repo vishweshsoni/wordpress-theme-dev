@@ -251,3 +251,7 @@ Stack trace:
 #6 /var/www/htdocs/index.php(17): require('/var/www/htdocs...')
 #7 {main}
   thrown in /var/www/htdocs/wp-content/themes/designfly/template-parts/content.php on line 25
+[09-Oct-2019 11:24:01 UTC] PHP Parse error:  syntax error, unexpected ':', expecting ',' or ')' in /var/www/htdocs/wp-content/themes/designfly/inc/functions-admin.php on line 22
+[09-Oct-2019 11:26:06 UTC] PHP Parse error:  syntax error, unexpected ':', expecting ',' or ')' in /var/www/htdocs/wp-content/themes/designfly/inc/functions-admin.php on line 23
+[09-Oct-2019 11:27:06 UTC] PHP Parse error:  syntax error, unexpected ':', expecting ',' or ')' in /var/www/htdocs/wp-content/themes/designfly/inc/functions-admin.php on line 23
+[09-Oct-2019 11:28:07 UTC] PHP Parse error:  syntax error, unexpected ':', expecting ',' or ')' in /var/www/htdocs/wp-content/themes/designfly/inc/functions-admin.php on line 23
