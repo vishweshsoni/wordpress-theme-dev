@@ -21,11 +21,7 @@ function admin_add_page()
         'admin_page_creation', //callback
         'dashicons-admin-customizer', //icon
         110);
-    /**
-     * below function will add menupage to the custom  theme
-     * Page name: Designfly
-     * Slug Name: designfly_page
-     */
+
     add_submenu_page(
         'designfly_page', //parent slug
         'Designfly Menu Title', //page title
@@ -37,10 +33,13 @@ function admin_add_page()
 }
 function admin_page_creation()
 {
-    //genration of our admin page
+    //it will genrate content for the admin page from ,
+    //directory: /inc/templates/designfly-admin.php
+    require_once(get_template_directory() . '/inc/templates/designfly-admin.php');
+
 }
 add_action('admin_menu', 'admin_add_page');
 
 function submenu_page_creation(){
-
+    
 }
