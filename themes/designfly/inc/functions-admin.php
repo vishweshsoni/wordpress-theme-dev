@@ -47,6 +47,9 @@ function admin_page_creation()
 }
 add_action('admin_menu', 'admin_add_page');
 
+/**
+ * submenu page callback function
+ */
 function submenu_page_creation()
 {
 
@@ -56,7 +59,17 @@ function submenu_page_creation()
  * function callback for settings register_settings
  */
 function desginfly_custom_setttings()
-{
+{  
+    /**
+     * register setting for cover text and description
+     * -: Cover text 1 , Cover text 1 Description
+     * -: Cover text 2 , Cover text 2 Description
+     * -: Cover text 3 , Cover text 3 Description
+     */
+    register_setting(
+        'designfly-settings-group', //db field
+        'profile_picture' //
+    );
     register_setting(
         'designfly-settings-group', //db field
         'first_title' //
@@ -83,11 +96,29 @@ function desginfly_custom_setttings()
         'designfly-settings-group', //db field
         'third_title_description' //
     );
+
+    /**
+     * section for registered settings
+     */
     add_settings_section(
         'designfly_cover_texts', //id,
         'Designfly cover text titles', //title,
         'designfly_cover_text_options', //callback
         'designfly_page' // page
+    );
+
+    /**
+     * setting fields for 
+     * -: Cover text 1 , Cover text 1 Description
+     * -: Cover text 2 , Cover text 2 Description
+     * -: Cover text 3 , Cover text 3 Description
+     */
+    add_settings_field(
+        'cover-img', //id,
+        'Cover Image', // title,
+        'cover_image_callback', // callback,
+        'designfly_page', //page,
+        'designfly_cover_texts'
     );
 
     add_settings_field(
@@ -140,6 +171,13 @@ function desginfly_custom_setttings()
 function designfly_cover_text_options()
 {
     echo "customize your area";
+}
+
+//callback function for image
+function cover_image_callback(){
+        $coveImg= esc_attr(get_option('profile_picture'));  
+        echo '<input type="button" value="Upload Cover Photo" class="button button-secondary one" ><input type="hidden" id="profile-picture" name="profile_picture" value="'.$coveImg.'"/>';
+
 }
 
 //callback function for first title
