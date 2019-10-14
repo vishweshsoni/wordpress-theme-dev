@@ -1,0 +1,11 @@
+.imgpr{
+        display: inline-block;
+        height: 150px !important;
+        width: 150px !important;
+        overflow: hidden;
+
+    }
+   img, .pr-view{
+        height: 100px !important;
+        width: 100px !important;
+    }
