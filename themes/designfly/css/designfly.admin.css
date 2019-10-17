@@ -1,11 +1,15 @@
-.imgpr{
-        display: inline-block;
-        height: 150px !important;
-        width: 150px !important;
-        overflow: hidden;
+.wpbody-content{
+        background-color: aqua;
+        
+}
 
-    }
-   img, .pr-view{
-        height: 100px !important;
-        width: 100px !important;
-    }
+
+
+.imgpr .pr-view{
+    margin-left: 35%;
+    align-content: center;
+    height: 25%;
+    width: 25%;
+    align-content: center;
+    
+}

@@ -20,16 +20,24 @@ function admin_add_page()
         'designfly_page', //menuslug
         'admin_page_creation', //callback
         'dashicons-admin-customizer', //icon
-        110);
+        110); 
 
     //add submenu page called designfly settings
+    // add_submenu_page(
+    //     'designfly_page', //parent slug
+    //     'Designfly Menu Title', //page title
+    //     'Designfly Settings', //menu title
+    //     'manage_options', //capabillity
+    //     'designfly_submenu_page', //submenu slug[aka:menu slug]
+    //     'submenu_page_creation' //callback function
+    // );
     add_submenu_page(
-        'designfly_page', //parent slug
-        'Designfly Menu Title', //page title
-        'Designfly Settings', //menu title
-        'manage_options', //capabillity
-        'designfly_submenu_page', //submenu slug[aka:menu slug]
-        'submenu_page_creation' //callback function
+            'designfly_page',//parent Slug
+            'Theme Options',//page title
+            'Theme Options',//menu title
+            'manage_options',//capabillity
+            'designfly_theme',//slug of page
+            'designfly_submenu_options_callback'//callback function for the submenu
     );
 
     /**
@@ -52,7 +60,7 @@ add_action('admin_menu', 'admin_add_page');
  */
 function submenu_page_creation()
 {
-
+    require_once get_template_directory().'/inc/templates/designfly-admin-settings.php';
 }
 
 /**
@@ -60,7 +68,9 @@ function submenu_page_creation()
  */
 function desginfly_custom_setttings()
 {  
+    
     /**
+     * Cover Page 
      * register setting for cover text and description
      * -: Cover text 1 , Cover text 1 Description
      * -: Cover text 2 , Cover text 2 Description
@@ -167,6 +177,27 @@ function desginfly_custom_setttings()
         'designfly_page', //page,
         'designfly_cover_texts'
     );
+    register_setting(
+        'designfly-theme-options', //db field
+        'post_formats',
+        'designfly_post_formats_callback'//
+    );
+    add_settings_section(
+        'designfly-theme-options-section',//id
+        'Theme options',
+        'designfly_theme_options_callback_function',//callbackfunction
+        'designfly_theme'
+    );
+    add_settings_field(
+        'post-formats',//
+        'Post Formats',//
+        'designfly_post_formats_settings_callback',
+        'designfly_theme',
+        'designfly-theme-options-section'
+    );    
+    
+    
+    
 }
 function designfly_cover_text_options()
 {
@@ -214,4 +245,27 @@ function third_title_callback()
 function third_title_description_callback(){
     $third_title_desc=esc_attr(get_option('third_title_description')); 
     echo '<input type="text" name="third_title_description" value="'.$third_title_desc.'"placeholder="Third Title description" />';
+}
+
+
+/**
+ * settings page functions
+ */
+function designfly_submenu_options_callback(){
+    require_once get_template_directory().'/inc/templates/designfly-admin-settings.php';
+}
+function designfly_post_formats_callback($input){
+    return $input;
+}
+function designfly_theme_options_callback_function(){
+       echo 'Activate and deactivate  spacific theme';
+}
+
+function designfly_post_formats_settings_callback(){
+      $formats = array('aside','gallery','link','video','image','quotes','chat');
+      $output='';
+      foreach($formats as $format){
+        $output.='<label><input type="checkbox" id="'.$format.'" name="'.$format.'" value="1>'.$format.'</label><br>';
+      }
+      return $output;
 }
