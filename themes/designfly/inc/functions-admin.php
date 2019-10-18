@@ -262,10 +262,12 @@ function designfly_theme_options_callback_function(){
 }
 
 function designfly_post_formats_settings_callback(){
+      $options= get_option('post_formats');
       $formats = array('aside','gallery','link','video','image','quotes','chat');
       $output='';
       foreach($formats as $format){
-        $output.='<label><input type="checkbox" id="'.$format.'" name="'.$format.'" value="1>'.$format.'</label><br>';
+        $checked= (@$options[$format]==1?'checked':'');
+        $output.='<label><input type="checkbox" id="'.$format.'" name="post_formats['.$format.']" value="1"'.$checked.'>'.$format.'</label><br>';
       }
-      return $output;
+      echo $output;
 }
