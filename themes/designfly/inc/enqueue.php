@@ -40,3 +40,16 @@ function desginfly_load_admin_scripts($hook)
 }
 
 add_action('admin_enqueue_scripts', 'desginfly_load_admin_scripts', 11);
+
+
+/**
+ * ===========================
+ *  FRONT-END ENQUEUE FUNCTIONS
+ * ===========================
+ */
+
+function sunset_load_scripts(){
+    wp_enqueue_style('designfly',get_template_directory_uri().'/css/designfly.css',array(),'1.0.0','all');
+ }
+ add_action( 'wp_enqueue_scripts','sunset_load_scripts');
+ 
