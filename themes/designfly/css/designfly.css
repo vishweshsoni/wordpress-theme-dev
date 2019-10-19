@@ -1,0 +1,12 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.navigation-bar1{
+
+    height: 105px;
+    width: 100%;
+    background-color: beige;
+    justify-content: center;
+    align-items: center;
+}

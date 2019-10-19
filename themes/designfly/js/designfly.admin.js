@@ -19,7 +19,7 @@ jQuery(document).ready(function($){
 		mediaUploader.on('select', function(){
 			attachment = mediaUploader.state().get('selection').first().toJSON();	
 			$('#profile-picture').val(attachment.url);
-			$('#profile-picture-preview').css('background-image','url(' + attachment.url + ')');
+			$('.imgpr').val(attachment.url);
 		});
 		
 		mediaUploader.open();
