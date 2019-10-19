@@ -12,9 +12,9 @@
 function desginfly_load_admin_scripts($hook)
 {
 
-    if ('toplevel_page_designfly_page' != $hook) {
-        return;
-    }   
+    // if ('toplevel_page_designfly_page' != $hook) {
+    //     return;
+    // }   
     wp_register_style(
         'designfly_admin', //      $handle:string,
         get_template_directory_uri() . '/css/designfly.admin.css', //$src:string|boolean,
@@ -49,7 +49,18 @@ add_action('admin_enqueue_scripts', 'desginfly_load_admin_scripts', 11);
  */
 
 function sunset_load_scripts(){
-    wp_enqueue_style('designfly',get_template_directory_uri().'/css/designfly.css',array(),'1.0.0','all');
- }
- add_action( 'wp_enqueue_scripts','sunset_load_scripts');
+    
+    wp_register_style(
+        'designfly-frontend', //      $handle:string,
+        get_template_directory_uri().'/css/designfly.css', //$src:string|boolean,
+        array(), //$deps:array,
+        '1.0.0', //$ver:string|boolean|null,
+        'all' //$media:string
+    );
+    wp_enqueue_style('designfly-frontend');
+
+
+
+}
+ add_action( 'wp_enqueue_scripts','sunset_load_scripts',1);
  

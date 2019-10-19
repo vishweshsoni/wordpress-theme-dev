@@ -22,13 +22,26 @@
 		<?php wp_head();?>
 	</head>
 	<body <?php body_class();?>>
-	<div class="navigation-bar">
+	<div class="navigation-bar1">
 			<div id="navigation-container">
-				<img src="<?php header_image();?>">
+				<?php
+				$custom_logo_id = get_theme_mod	('custom_logo');
+				$image = wp_get_attachment_image_src($custom_logo_id, 'full');
+				?>
+				<img id="img-logo" src="<?php echo $image[0]; ?>">
 				<ul>
-					<li></li>
+					<li class="active"><a href="">Home</a></li>
+					<li><a href=""> Blog</a></li>
+	                <li><a href="">Services</a></li>
+    	            <li><a href="">Contact</a></li>
 				</ul>
 			</div>
 	<div>
+	<script>
+    // var id=document.getElementById('img-logo');
+    // id.style.width='500px';
+    // id.style.height='500px';
+        
+	</script>
 
 
