@@ -28,3 +28,12 @@ function theme_prefix_setup() {
 
 }
 add_action( 'after_setup_theme', 'theme_prefix_setup' );
+
+/***
+ * adding Navigation menus
+ * 
+ */
+function add_nav_menus(){ 
+    register_nav_menu( 'primary-menu', __('Primary Menu') );
+}
+add_action('after_setup_theme','add_nav_menus');

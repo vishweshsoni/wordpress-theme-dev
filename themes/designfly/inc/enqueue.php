@@ -62,5 +62,5 @@ function sunset_load_scripts(){
 
 
 }
- add_action( 'wp_enqueue_scripts','sunset_load_scripts',1);
+ add_action( 'wp_enqueue_scripts','sunset_load_scripts',11);
  

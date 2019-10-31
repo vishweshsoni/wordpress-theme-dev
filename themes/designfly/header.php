@@ -24,20 +24,24 @@
 	<body <?php body_class();?>>
 	<div class="navigation-bar1">
 			<div id="navigation-container">
-				<?php
+				<?php 
 				$custom_logo_id = get_theme_mod	('custom_logo');
 				$image = wp_get_attachment_image_src($custom_logo_id, 'full');
 				?>
-				<img id="img-logo" src="<?php echo $image[0]; ?>">
-				<ul>
-					<li class="active"><a href="">Home</a></li>
-					<li><a href=""> Blog</a></li>
-	                <li><a href="">Services</a></li>
-    	            <li><a href="">Contact</a></li>
-				</ul>
+				 <img id="img-logo" src="<?php echo $image[0]; ?>">
+				<nav class="nav-top">
+					<?php 
+						wp_nav_menu( array(
+								'theme_location'=>'primary-menu',
+								'container'=>false,
+						) );
+						?>
+				</nav>	
+								
 			</div>
 	<div>
 	<script>
+		
     // var id=document.getElementById('img-logo');
     // id.style.width='500px';
     // id.style.height='500px';
